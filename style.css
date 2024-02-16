@@ -1,0 +1,74 @@
+/*GENERALES*/
+body{background: rgb(255, 132, 132 );}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+/*FIN GENERALES*/
+
+
+.cuerpopagin{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo{
+    width: 30%;
+    height: 90%;
+    display: block;
+    background: rgb(211, 107, 107);
+    border-radius: 2%;
+}
+
+.cuerpovisor{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visor{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: rgb(218, 113, 113);
+}
+
+.botonescalc{
+    width: 100%;
+    height: 80%;
+    display: block;
+}
+
+.lineas{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lineas button{
+    width: 20%;
+    height: 60%;
+    border: none;
+    background: rgb(187, 74, 74);
+    border-radius: 3%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button:active{
+    transition-duration: 0.1s;
+    background: rgb(255, 132, 132 );
+}
+
+
+
+
+
