@@ -8,56 +8,29 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="cuerpopagin">
-        <div class="cuerpo">
-            <div class="cuerpovisor">
-                <div class="visor">
-                    <p id="visor"></p>
-                </div>
-            </div>
-            <div class="botonescalc">
-                <div class="lineas">
-                    <button id="porcentaje">%</button>
-                    <button id="">CE</button>
-                    <button id="borrar">C</button>
-                    <input type="button" value="BORRAR" id="igual">
-                </div>
-                <div class="lineas">
-                    <button id="">1/x</button>
-                    <button id="cuadrado">x^2</button>
-                    <button id="raiz">√</button>
-                    <button id="division">÷</button>
-                </div>
-                <div class="lineas">
-                    <button id="siete">7</button>
-                    <button id="ocho">8</button>
-                    <button id="nueve">9</button>
-                    <button id="miltiplicar">x</button>
-                </div>
-                <div class="lineas">
-                    <button id="cuatro">4</button>
-                    <button id="cinco">5</button>
-                    <button id="seis">6</button>
-                    <button id="resta">-</button>
-                </div>
-                <div class="lineas">
-                    <button id="uno">1</button>
-                    <button id="dos">2</button>
-                    <button id="tres">3</button>
-                    <button id="suma">+</button>
-                </div>
-                <div class="lineas">
-                    <button id="">+/-</button>
-                    <button id="">0</button>
-                    <button id="">,</button>
-                    <input type="button" value="=" id="igual">
-                </div>
-            </div>
-        </div>
-        <div class="medio">
-            <h1>CALCULADORA</h1>
-        </div>
-    </div>
+    <form name="calculadora" id="#calculadora">
+        <input type="textfield" name="ans" vaue="" autocomplete="off" readonly>
+        <br>
+        <input type="button" value="7" onclick="document.calculadora.ans.value = '7'" id="igual">
+        <input type="button" value="8" onclick="document.calculadora.ans.value = '8'" id="igual">
+        <input type="button" value="9" onclick="document.calculadora.ans.value = '9' " id="igual">
+        <input type="button" value="9" onclick="document.calculadora.ans.value = '+' " id="igual">
+        <br>
+        <input type="button" value="4" onclick="document.calculadora.ans.value = '4'" id="igual">
+        <input type="button" value="5" onclick="document.calculadora.ans.value = '5'" id="igual">
+        <input type="button" value="6" onclick="document.calculadora.ans.value = '6' " id="igual">
+        <input type="button" value="-" onclick="document.calculadora.ans.value = '-' " id="igual">
+        <br>
+        <input type="button" value="7" onclick="document.calculadora.ans.value = '1'" id="igual">
+        <input type="button" value="8" onclick="document.calculadora.ans.value = '2'" id="igual">
+        <input type="button" value="9" onclick="document.calculadora.ans.value = '3' " id="igual">
+        <input type="button" value="9" onclick="document.calculadora.ans.value = '*' " id="igual">
+        <br>
+        <input type="button" value="=" onclick="document.calculadora.ans.value = eval(document.calculadora.ans.value)" id="igual">
 
+
+        <input type="reset" value="CE">
+
+    </form>
 </body>
 </html>

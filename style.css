@@ -5,99 +5,71 @@ body{background-image: url(imagenes/fondo.png);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 /*FIN GENERALES*/
 
-
-.cuerpopagin{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.medio{
-    width: 25%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cuerpo{
-    width: 30%;
-    height: 90%;
-    display: block;
-    background: rgb(46, 205, 216);
-    border-radius: 1%;
-    box-shadow: 10px 5px 10px rgb(192, 191, 191);
-    border: 5px black;
-}
-
-.cuerpovisor{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.visor{
-    width: 90%;
-    height: 80%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    background: rgb(255, 255, 255);
-    box-shadow: 10px 5px 20px rgb(102, 40, 40);
-}
-
-.botonescalc{
-    width: 100%;
-    height: 80%;
-    display: block;
-}
-
-.lineas{
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#igual{
-    width: 20%;
-    height: 60%;
-    border: none;
-    background: rgb(145, 58, 58);
-    border-radius: 4%;
-    box-shadow: 13px 7px 15px rgb(102, 40, 40);
-}
-
-.lineas button{
-    width: 20%;
-    height: 60%;
-    border: none;
-    background: rgb(187, 74, 74);
-    border-radius: 90%;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    box-shadow: 13px 7px 15px rgb(102, 40, 40);
-}
-
-#igual:active{
-    transition-duration: 0.1s;
-    background: rgb(255, 132, 132 );
-    box-shadow: none;
-}
-
 button:active{
     transition-duration: 0.1s;
     background: rgb(255, 132, 132 );
     box-shadow: none;
 }
 
+#calculadora_inicial{
+    width: 340px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#calculadora_inicial form{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#calculadora_inicial input[type = textfield]{
+    width: 90%;
+    height: 25%;
+    border-radius: 10%;
+    cursor: default;
+    font-family: sans-serif;
+    color: wheat;
+    background-color: black;
+    padding: 15px;
+    text-align: right;
+
+}
+
+#calculadora_inicial input[type = button]{
+    width: 20%;
+    cursor: default;
+    font-family: sans-serif;
+    font-size: 26px;
+    color: black;
+    padding: 18px;
+    margin: 3px;
+    border: 0;
+    border-radius: 100%;
+}
+
+#calculadora_inicial input[type = reset]{
+    width: 20%;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 26px;
+    color: black;
+    padding: 18px;
+    margin: 3px;
+    border: 0;
+    border-radius: 100%;
+}
+
+#calculadora_inicial .naranja{
+    background-color: orange !important;
+    color: white !important;
+}
+
+#calculadora_inicial .gris{
+    background-color: grey !important;
+    color: white !important;
+}
 
 
 
